@@ -2,17 +2,17 @@ import './App.css'
 
 export function App(){
     return (
-        <article >
-            <header>
-                <img src="public/avatar.jpg" alt="Avatar" />
-                <div>
+        <article className="tw-followCard">
+            <header className="tw-followCard-header">
+                <img className="tw-followCard-img" src="public/avatar.jpg" alt="Avatar" />
+                <div className="tw-followCard-info">
                     <strong>Aldana Tamara Di Flavio</strong>
-                    <span>@alhstar</span>
+                    <span className="tw-followCard-infoUserName">@alhstar</span>
                 </div>
             </header>
 
             <aside>
-                <button>Seguir</button>
+                <button className="tw-followCard-button">Seguir</button>
             </aside>
         </article>
     )

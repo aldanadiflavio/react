@@ -1,19 +1,14 @@
 import './App.css'
+import { TwitterFollowCard } from './TwitterFollowCard'
 
 export function App(){
     return (
-        <article className="tw-followCard">
-            <header className="tw-followCard-header">
-                <img className="tw-followCard-img" src="public/avatar.jpg" alt="Avatar" />
-                <div className="tw-followCard-info">
-                    <strong>Aldana Tamara Di Flavio</strong>
-                    <span className="tw-followCard-infoUserName">@alhstar</span>
-                </div>
-            </header>
+        <section className='App'>
+            <TwitterFollowCard username="alhstar" name="Aldana Tamara Di Flavio" />
+            <TwitterFollowCard username="mapachepedro" name="Pedro el mapache" />
+            <TwitterFollowCard username="pepe123" name="Pepe Lopez" />
 
-            <aside>
-                <button className="tw-followCard-button">Seguir</button>
-            </aside>
-        </article>
+        </section>
+        
     )
 }
